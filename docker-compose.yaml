@@ -4,6 +4,7 @@ services:
   backend:
     volumes:
       - static:/static
+      - ./backend/files:/app/files
     env_file:
       - .env
     build:
